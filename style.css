@@ -1,12 +1,16 @@
-body {
+body,html {
     background-color: #fff;
+    width: 100%;
+    height: 100%;
+
+  overflow-x: hidden;
  }
  svg {
    position: absolute;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   background-color: #fff;
+   background-color: #fff;  
  }
  .path {
    animation: draw 20s infinite;
@@ -38,3 +42,31 @@ body {
      stroke-opacity: 1;
    }
  }
+
+img {
+  position: relative;
+  margin-top: 100%;
+}
+
+/* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #04AA6D;
+  width: 0%;
+}
