@@ -12,11 +12,3 @@ function rotate() {
    let theta = (scrollLength / imgRadius) * (180 / Math.PI);
    gearImg.style.transform = `rotate(${theta}deg)`;
 }
-
-// Define the scroll event listener function
-function handleScroll() {
-    console.log('YOURE SCROLLINGGGGG');
-}
-
-// Add the scroll event listener to the window
-document.addEventListener('scroll', handleScroll);

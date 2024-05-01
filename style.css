@@ -1,16 +1,34 @@
+@font-face {
+  font-family: Robotic;
+  src: url(android-7.regular.ttf);
+}
+
+
+* {
+  position: relative;
+  z-index: 1;
+}
+
 body,html {
-    background-color: #fff;
     width: 100%;
     height: 100%;
-
-  overflow-x: hidden;
+    font-family: 'Archivo Black', sans-serif;
+    overflow-x: hidden;
+    font-size: 1.1rem;
  }
+
+ body {
+  background-image: url(bg.svg);
+  background-size: cover;
+ }
+
  svg {
    position: absolute;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   background-color: #fff;  
+   z-index: 0;  
+
  }
  .path {
    animation: draw 20s infinite;
@@ -43,30 +61,23 @@ body,html {
    }
  }
 
-img {
-  position: relative;
-  margin-top: 100%;
+.header-1 {
+  font-family: Robotic;
+  -webkit-text-stroke: #000000 3px;
+  color: black;
+  text-align: center;
+  margin-top: 2rem;
 }
 
-/* Style the header: fixed position (always stay at the top) */
-.header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  background-color: #f1f1f1;
+li {
+  list-style-image: url(favicon-16x16.png);
+  list-style-position: inside;
 }
 
-/* The progress container (grey background) */
-.progress-container {
-  width: 100%;
-  height: 8px;
-  background: #ccc;
+.nrml {
+  list-style-image: none;
 }
 
-/* The progress bar (scroll indicator) */
-.progress-bar {
-  height: 8px;
-  background: #04AA6D;
-  width: 0%;
+.inline {
+  display: inline-block;
 }
